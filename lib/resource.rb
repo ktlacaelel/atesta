@@ -1,0 +1,20 @@
+
+module Resource; end
+
+require 'lib/resource/base'
+require 'lib/resource/cron'
+require 'lib/resource/directory'
+require 'lib/resource/execute'
+require 'lib/resource/file'
+require 'lib/resource/gem'
+require 'lib/resource/git'
+require 'lib/resource/group'
+require 'lib/resource/hook'
+require 'lib/resource/link'
+require 'lib/resource/package'
+require 'lib/resource/remote_file'
+require 'lib/resource/service'
+require 'lib/resource/swap_release'
+require 'lib/resource/template'
+require 'lib/resource/user'
+require 'lib/resource/version'
