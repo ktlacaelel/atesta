@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'hashie'
-require 'lib/output'
 
 class Status; end
 
