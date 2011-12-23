@@ -1,6 +1,13 @@
 = atesta
 
-Description goes here.
+Basically it loads chef's provisioning-cookbooks with a few cool improvements!
+cookbooks are more powerful and easy to use, and there is no strategy!
+atesta only knows how to evaluate the cookbooks but how exactly they are executed is up to you.
+
+That way you can use atesta for deployments, imports.
+or cool automated-setups or configurations that dont even need to be remote.
+
+more doc comming soon.
 
 == Note on Patches/Pull Requests
  
