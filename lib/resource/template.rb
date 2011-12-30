@@ -11,6 +11,10 @@ module Resource
     PREFIX = ''
 
     def run
+      Execution.block 'Ensure template base', @target, @owner do |b|
+        ensure_target_zone
+        b.always_run @always_run
+      end
       Execution.block 'Compiling template file', @target, @owner do |b|
         compile!
         b.always_run @always_run
@@ -27,7 +31,7 @@ module Resource
     def initialize target, &block
       set_base_defaults
       @target = target
-      ensure_target_zone
+      # ensure_target_zone
       self.instance_eval(&block)
     end
 
