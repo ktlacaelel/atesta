@@ -1,4 +1,9 @@
-require 'md5'
+if RUBY_VERSION =~ /1\.8/
+  require 'md5'
+else
+  require 'digest/md5'
+  MD5 = Digest::MD5
+end
 
 class Execution
 
